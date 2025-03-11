@@ -9,7 +9,7 @@ window.onload = function() {
 }
 function sendToWhatsApp() {
     var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
+   
     var date = document.getElementById("date").value;
     var guests = document.getElementById("guests").value;
 
@@ -30,7 +30,7 @@ function sendToWhatsApp() {
     // بناء رسالة الحجز
     var message = "مرحبًا، أود تأكيد الحجز.%0A" +
                   "الاسم: " + name + "%0A" +
-                  "رقم الهاتف: " + phone + "%0A" +
+                 
                   "الخدمات المطلوبة: " + services.join(", ") + "%0A" +
                   "التاريخ: " + date;
 
@@ -92,45 +92,45 @@ document.addEventListener("DOMContentLoaded", function() {
     const translations = {
         "en": {
             "servicesTitle": "Our Services",
-            "service1": "Haircut",
-            "service2": "Hair Blowout",
-            "service3": "Protein Treatment",
-            "service4": "Hair Coloring",
-            "service5": "Botox Treatment",
-            "service6": "Filler Treatment",
-            "service7": "Moroccan Hammam",
-            "service8": "Facial Cleansing",
-            "service9": "Makeup",
-            "service10": "Acrylic Nails",
-            "service11": "Microblading"
+            "service-1": "Haircut",
+            "service-2": "Hair Blowout",
+            "service-3": "Protein Treatment",
+            "service-4": "Hair Coloring",
+            "service-5": "Botox Treatment",
+            "service-6": "Filler Treatment",
+            "service-7": "Moroccan Hammam",
+            "service-8": "Facial Cleansing",
+            "service-9": "Makeup",
+            "service-10": "Acrylic Nails",
+            "service-11": "Microblading"
         },
         "ar": {
             "servicesTitle": "خدماتنا",
-            "service1": "قص الشعر",
-            "service2": "سشوار ",
-            "service3": "بروتين",
-            "service4": "صبغة",
-            "service5": " بوتكس",
-            "service6": " فيلر",
-            "service7": "الحمام المغربي",
-            "service8": "تنظيف البشره",
-            "service9": "المكياج",
-            "service10": "الأظافر الأكريليك",
-            "service11": "الميكروبليدنج"
+            "service-1": "قص الشعر",
+            "service-2": "سشوار ",
+            "service-3": "بروتين",
+            "service-4": "صبغة",
+            "service-5": " بوتكس",
+            "service-6": " فيلر",
+            "service-7": "الحمام المغربي",
+            "service-8": "تنظيف البشره",
+            "service-9": "المكياج",
+            "service-10": "الأظافر الأكريليك",
+            "service-11": "الميكروبليدنج"
         },
         "tr": {
             "servicesTitle": "Hizmetlerimiz",
-            "service1": "Saç Kesimi",
-            "service2": "Fön",
-            "service3": "Protein Bakımı",
-            "service4": "Saç Boyama",
-            "service5": "Botoks Tedavisi",
-            "service6": "Dolgu Tedavisi",
-            "service7": "Fas Hamamı",
-            "service8": "Yüz Temizliği",
-            "service9": "Makyaj",
-            "service10": "Akrilik Tırnak",
-            "service11": "Mikroblading"
+            "service-1": "Saç Kesimi",
+            "service-2": "Fön",
+            "service-3": "Protein Bakımı",
+            "service-4": "Saç Boyama",
+            "service-5": "Botoks Tedavisi",
+            "service-6": "Dolgu Tedavisi",
+            "service-7": "Fas Hamamı",
+            "service-8": "Yüz Temizliği",
+            "service-9": "Makyaj",
+            "service-10": "Akrilik Tırnak",
+            "service-11": "Mikroblading"
         }
     };
 
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // Update content dynamically
             document.getElementById("services-title").innerText = translations[selectedLang].servicesTitle;
             for (let i = 1; i <= 11; i++) {
-                document.getElementById(`service${i}`).innerText = translations[selectedLang][`service${i}`];
+                document.getElementById(`service-${i}`).innerText = translations[selectedLang][`service-${i}`];
             }
         });
     });
